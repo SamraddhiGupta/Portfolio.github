@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <!--favicon--->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_/favicon-16x16.png">
+        <link rel="manifest" href="favicon_package_/site.webmanifest">
+        <link rel="mask-icon" href="favicon_package_/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://kit.fontawesome.com/b4c4a92943.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!--cursor-->
+        <div class='cursor' id="cursor"></div>
+        <div class='cursor2' id="cursor2"></div>
+        <div class='cursor3' id="cursor3"></div>
+
+        <!---header-->
+      <div id="header">
+        <div class="container">
+        <nav>
+            <img src="favicon_package_/android-chrome-192x192.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h3>Hi, I'm <span>Samraddhi</span>Gupta </h3>
+            <h2><span id="element"></span></h2>
+            <br><a href="#about">About me..</a>
+        </div>
+       </div>
+      </div>
+      <!-- About Section Start -->
+      <div id="about">
+        <div class="container">
+            <div class="row">
+             <div class="about-col-1">
+                <img src="image/PicsArt_12-20-10.59.39.jpg">
+             </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Software engineering graduate with basic knowledge in coding and design. Ability to learn new softwares 
+                        and technologies quickly. Capability to work in teams by providing valuable support. 
+                        To work with a company which appreciates
+                        innovation so that i can enhance my
+                        knowledge and skills to give my best growth
+                        of the company .</p>
+                        <div class="tab-title">
+                           <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                           <p class="tab-links" onclick="opentab('Eduacation')">Eduacation</p>
+                           <p class="tab-links" onclick="opentab('Strength')">Strength</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                             <ul>
+                                <li><span>Web Technologies and Languages</span><br>HTML/CSS,javascript,Reactjs</li>
+                                <li><span>Programming</span><br> Python</li>
+                                <li><span>Subject of interest</span><br>(Basic)OOPS,DBMS</li>
+                             </ul>
+                        </div>
+                        <div class="tab-contents" id="Eduacation">
+                            <ul>
+                               <li><span>Bachelor’s |2018-22|RGPV<br>
+                                Institute - Bansal Institute Of Research And
+                                Technology, Bhopal</span><br>CGPA - 8.4 CGPA</li>
+                               <li><span>Higher Secondary|2017-18|M.P. Board<br>
+                                School - School Of Excellence, shahpur</span><br> Percentage - 62.6%</li>
+                               <li><span>High School |2015-16|M.P. Board<br>
+                                School - School Of Excellence, shahpur</span><br>Percentage - 64.83%</li>
+                            </ul>
+                       </div>
+                       <div class="tab-contents" id="Strength">
+                        <ul>
+                           <li>Quick learner and Hardworking.</li>
+                           <li>Possess good management and
+                            rganizational skills.</li>
+                        
+                        </ul>
+                   </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+        <div class="container">
+           <h1 class="sub-title">My Project</h1>
+           <div class="services-list">
+            <div>
+                <i class="fa-solid fa-car"></i>
+                <h2>DRIVER DROWSINESS DETECTION SYSTEM</h2><br>
+                <p>To develop a real-timedrowsiness detection system that can beinstalled in any kind of vehicle which will detect 
+                    drowsiness in the face of the driver.<br>
+                    Tools Required-
+                    Raspberry Pi kit along with camera module, computer with facecam.
+                    </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-palette"></i>
+                <h2>ART AND CRAFT CLASSES</h2><br>
+                <p>I have made a webpage for art and craft classes , people can register in it for classes <br>
+                    Technologies used
+                         - HTML/CSS ,javascript
+                </p>
+            </div>
+           </div>
+        </div>
+    </div>
+    <!---contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i>samraddhigupta2017@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91---------</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100009429549541" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/SamraddhiGupta" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/__samraddhi_gupta/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/samraddhi-gupta-1b23281a8/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a  class="btn btn2" target="_blank"> Download CV</a>
+                       <br> <a  class="btn btn2" target="_blank">Let's Chat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
